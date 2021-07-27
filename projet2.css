@@ -1197,7 +1197,7 @@ h2 {
   }
 
   .titre_assistance {
-    padding-bottom: 22px;
+    padding-bottom: 22px; 
     padding-right: 3em;
   }
 
@@ -1208,6 +1208,8 @@ h2 {
   }
 
   footer h4 {
+    display: flex;
+    justify-content: baseline;
     font-weight: normal;
   }
 
