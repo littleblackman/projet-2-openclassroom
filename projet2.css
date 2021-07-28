@@ -964,7 +964,6 @@ h2 {
   /*Haut de la page avec le logo et le menu*/
 
   body {
-    margin-left: 10px;
     width: 100%;
   }
 
@@ -978,10 +977,20 @@ h2 {
     width: 100%;
   }
 
-  .menu {
-    display: flex;
-    justify-content: start;
-    padding-right: 3em;
+  /*partie menu*/
+
+  .menu a {
+    color: black;
+    padding: 0px;
+  
+    min-width: 35px;
+    margin-right: 2em;
+  }
+  
+  .menu a:hover {
+    border-top: solid blue 2px;
+    padding-top: 12px;
+    color:#0065fc; 
   }
 
   
@@ -991,20 +1000,28 @@ h2 {
   .slogan h1 {
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   /*bouton recherche*/
 
   .type-search {
-    width: 200px;
+    width: 150px;
     padding-left: 10px;
   }
 
+  .logo_gps {
+    position: relative;
+    height: 40px;
+    background-color: #f2f2f2;
+    width: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
   .rechercher {
     background-color: #0065fc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 15%;
+    width: 50%;
     border: none;
     color: white;
     outline: none;
@@ -1067,6 +1084,7 @@ h2 {
    align-items: baseline;
   }
 
+
   /*Partie les plus populaires*/
   #plus_populaires:nth-child(2) {
     display: flex;
@@ -1084,16 +1102,12 @@ h2 {
     margin-left: 0em;
     padding-left: 0;
     font-size: 1.4em;
-    width: 50%;
- 
+  
   } 
   
-  .fa-chart-line:nth-child(2) {
-    
-   
- 
-    background-color: rosybrown;
-    font-size: 1.3em;
+  .fa-chart-line:before {
+    display: flex;
+    margin-left: 16em;
   }
   
   .etoiles_populaire {
@@ -1119,7 +1133,6 @@ h2 {
     margin-bottom: 100px;
     box-sizing: border-box;
     border-radius: 1.25rem;
-    background-color: blue;
   }
 
   .bloc_activite {
@@ -1194,7 +1207,6 @@ h2 {
   }
 
   .titre_apropos {
-    padding-bottom: 22px;
     padding-right: 2em;
   }
 
@@ -1211,8 +1223,7 @@ h2 {
   }
 
   .titre_assistance {
-    padding-bottom: 22px; 
-    padding-right: 3em;
+    padding-right: 4em;
   }
 
   .assistance {
