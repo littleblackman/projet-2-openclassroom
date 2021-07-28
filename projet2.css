@@ -612,10 +612,7 @@ footer {
   .inscription {
     position: ABSOLUTE;
     position:relative;
-    display: flex;
-    align-items: flex-start;
     margin-top: 1em;
-    width: 25%;
   }
   /*Partie de la page qui commence par le slogan*/
   .slogan {
