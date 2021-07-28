@@ -1,6 +1,8 @@
 body {
   margin-left: 30px;
   font-family: "Raleway", sans-serif;
+  margin: 0em;
+  padding: 0em;
 }
 
 /*Haut de la page avec le logo et le menu*/
@@ -14,6 +16,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin: 20px;
 }
 
 .logo:nth-child(1) {
@@ -62,6 +65,7 @@ h2 {
 /*Partie de la page qui commence par le slogan */
 .slogan {
   display: block;
+  margin-left: 20px;
 }
 
 .slogan h1 {
@@ -78,10 +82,11 @@ h2 {
 }
 /*bouton recherche*/
 
-.section_recherche {
+#section_recherche {
   display: flex;
   height: 40px;
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 .bar_de_recherche {
@@ -135,6 +140,7 @@ h2 {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .titre_filtres h3 {
@@ -201,6 +207,7 @@ h3 {
   flex-direction: column;
   padding-left: 0;
   margin-top: -2em;
+  margin-left: 20px;
 }
 
 .cercle_information {
@@ -230,6 +237,7 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 20px;
 }
 
 .marseille {
@@ -393,13 +401,13 @@ h3 {
 
 #activites:nth-child(3) {
   width: 100%;
-  margin-left: 0;
+  margin-left: -10px;
   padding-top: 3em;
 }
 
-.titre_section {
+.titre_section_marseille {
   margin-bottom: 1em;
-  margin-left: 1em;
+  padding-left: 1.5em;
 }
 
 .conteneur_activite {
@@ -500,12 +508,14 @@ h3 {
 /* Partie bas de la page */
 
 
-#pied_page {
+footer {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-around;
+  
   align-items: baseline;
   width: 100%;
+  padding-left: 0em;
+  margin-left: 0em;
 }
 
 .a_propos:nth-child(1) {
@@ -513,7 +523,7 @@ h3 {
   justify-items: baseline;
   justify-content: baseline;
   padding-top: 3em;
-  margin-left: 1.5em;
+  padding-left: 25px;
   width: 33%;
 }
 
@@ -521,7 +531,6 @@ h3 {
   display: block;
   justify-items: baseline;
   justify-content: baseline;
-  padding-top: 3em;
   width: 33%;
 }
 
@@ -1058,7 +1067,6 @@ h2 {
   }
 
   /*Partie les plus populaires*/
-
   #plus_populaires:nth-child(2) {
     display: flex;
     background-color: #f2f2f2;
@@ -1068,20 +1076,23 @@ h2 {
     width: 91%;
     height: 100%;
   }
-
   
-  
-  .titre_section_populaire {
+  .titre_section_populaire:nth-child(1) {
     display: flex;
-    
+    justify-content: flex-start;
+    margin-left: 0em;
+    padding-left: 0;
     font-size: 1.4em;
+    width: 50%;
+ 
   } 
   
-  .fa-chart-line:before {
-    padding: 0;
-    display: flex;
-    margin-left: 20em;
-    width: 50%;
+  .fa-chart-line:nth-child(2) {
+    
+   
+ 
+    background-color: rosybrown;
+    font-size: 1.3em;
   }
   
   .etoiles_populaire {
