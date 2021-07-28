@@ -3,6 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0em;
   padding: 0em;
+  width: 100%;
 }
 
 /*Haut de la page avec le logo et le menu*/
@@ -512,11 +513,14 @@ h3 {
 footer {
   background-color: #f2f2f2;
   display: flex;
-  
   align-items: baseline;
   width: 100%;
   padding-left: 0em;
   margin-left: 0em;
+}
+
+#pied_page h4{
+  font-weight: normal;
 }
 
 .a_propos:nth-child(1) {
@@ -527,6 +531,7 @@ footer {
   padding-left: 25px;
   width: 33%;
 }
+
 
 .nos_hebergements:nth-child(2) {
   display: block;
@@ -547,6 +552,12 @@ footer {
 
 @media (min-width: 300px) and (max-width: 767px) /* smartphones */ {
 
+  body{
+    margin: 0em;
+    padding: 0em;
+    width: 100%;
+  }
+
   h2 {
     /*font-family: 'Raleway-Semibold';*/
     font-size: 18px;
@@ -557,55 +568,45 @@ footer {
     font-size: 16px;
   }
 
-  body{
-    width: 100%;
-    margin-left: 0;
-  }
-
   /* partie header avec logo et menu */
 
   #site {
     display: grid;
+    margin-left: 10px;
   }
 
   .logo{
     height: 3em;
     display: flex;
-  
   }
 
   header {
     display: flex;
     align-items: baseline;
     width: 100%;
-    margin-left: 0.5em;
   }
 
   header ul li {
     padding: 5px 6px 5px 0px;
   }
 
-
-  nav {
-    width: 100%;
+  .menu {
+    width: 88%;
     margin-top: 2px;
     display: flex;
     justify-content: space-around;
   }
 
-  .nav ul {
+  .menu ul {
     border-bottom: 2px solid #f2f2f2;
   }
 
-  .menu {
-    margin-right: 0;
-    margin-left: 2.5em;
-  }
+  
 
   .inscription {
     position: ABSOLUTE;
-    top: 8px;
-    margin-left: 18em;
+    
+   
       position:relative;
       display: flex;
       align-items: flex-start;
@@ -618,9 +619,34 @@ footer {
     margin-left: 0.5em;
   }
 
-  /*partie barre de recherche*/
+  /*partie bouton de recherche*/
   .bar_de_recherche{
     margin-left: 0.5em;
+  }
+
+  #section_recherche span{
+    display: none;
+  }
+
+  .logo_gps {
+    position: relative;
+    height: 40px;
+    background-color: #f2f2f2;
+    width: 15%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .rechercher {
+    background-color: #0065fc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 15%;
+    border: none;
+    color: white;
+    outline: none;
+    font-weight: bold;
+    border-color: #f2f2f2;
   }
   /* partie filtres */
 
@@ -628,7 +654,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
 
   .titre_filtres {
@@ -676,12 +702,11 @@ footer {
   }
 
   .cercle_information h3{
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   
   .titre_slogan {
     display: flex;
-    padding-left: 1em;
   }
   
   .fa-info {
@@ -695,6 +720,7 @@ footer {
     border: solid 1px #d9d9d9;
     border-radius: 100%;
     margin-top: 1.5em;
+    margin-left: 1em;
   }
 
   /* hébergements à marseille */
@@ -702,11 +728,12 @@ footer {
   #hebergementsamarseille {
     display: flex;
     flex-direction: column;
+    margin: 0em;
+    padding: 0em;
   }
 
   .marseille{
     width: 88%;
-    margin-left: 0.5em;
   }
 
   .marseille h2{
@@ -754,11 +781,12 @@ footer {
   #plus_populaires:nth-child(2){
     order: -1;
     width: 88%;
-    margin-left: 0.5em;
+    margin-right: 0em;
+    padding-right: 0em;
   }
 
   .partie_plus_populaire {
-    width: 100%;
+    
   }
 
   .partie_plus_populaire h2{
@@ -773,7 +801,7 @@ footer {
     position: absolute;
     display: flex;
     align-items: baseline;
-    margin-left: -3em;
+    margin-left: -2em;
   }
 
   .hotel_populaires {
@@ -839,7 +867,6 @@ h2 {
 .conteneur_activite {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   background-color: red;
 }
 
@@ -924,11 +951,6 @@ h2 {
     width: auto;
     display:flex;
     flex-direction: column;
-   
-  }
-
-  .a_propos {
-    
   }
 
   .a_propos:nth-child(1) {
@@ -936,7 +958,7 @@ h2 {
     justify-items: baseline;
     justify-content: baseline;
     padding-top: 3em;
-    margin-left: 1.5em;
+   
     width: 100%;
   }
   
