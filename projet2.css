@@ -133,6 +133,10 @@ h2 {
   outline: none;
   font-weight: bold;
   border-color: #f2f2f2;
+} 
+
+.logo_loupe{
+  display: none;
 }
 
 /*partie filtres*/
@@ -605,52 +609,77 @@ footer {
     border-bottom: 2px solid #f2f2f2;
   }
 
-  
-
   .inscription {
     position: ABSOLUTE;
-    
-   
-      position:relative;
-      display: flex;
-      align-items: flex-start;
-      margin-top: 1em;
-      width: 25%;
-      background-color: rebeccapurple;
+    position:relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1em;
+    width: 25%;
   }
   /*Partie de la page qui commence par le slogan*/
   .slogan {
-    margin-left: 0.5em;
+    margin-left: 1 .5em;
   }
 
   /*partie bouton de recherche*/
-  .bar_de_recherche{
-    margin-left: 0.5em;
+  #section_recherche {
+    display: flex;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
   }
 
   #section_recherche span{
     display: none;
   }
-
+  
+  .bar_de_recherche {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
   .logo_gps {
     position: relative;
     height: 40px;
     background-color: #f2f2f2;
-    width: 15%;
+    width: 80px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+  
+  .type-search {
+    width: 170px;
+    padding-left: 10px;
+    border-color: #f2f2f2;
+  }
+  
+  .type-search::placeholder {
+    font-weight: bold;
+    color: black;
   }
 
   .rechercher {
     background-color: #0065fc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 15%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 30%;
     border: none;
     color: white;
     outline: none;
     font-weight: bold;
     border-color: #f2f2f2;
+  } 
+  
+  .logo_loupe{
+    display: block;
+    position: absolute;
+    color: white;
+    margin-left: 13.4em;
+    margin-top: 0.6em;
+    
   }
   /* partie filtres */
 
@@ -754,6 +783,7 @@ footer {
   .hotel {
     width: 95%;
     margin-top: 1em;
+    margin-left: 0em;
   }
 
   .hotel img {
@@ -851,104 +881,40 @@ footer {
 
 /* partie activités à marseille*/
 
-  
 #activites:nth-child(3) {
-  display: flex;
+    margin: 0em;
+    padding: 0em;
+}
+
+.conteneur_activite{
+  display: grid;
   flex-direction: column;
-  margin-left: 0.5em;
-}
-
-.activitesmarseille{
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  display: flex;
-  
-}
-
-.conteneur_activite {
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-}
-
-.conteneur_activite img{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.bloc_activite a {
-  text-decoration: none;
-}
-
-.bloc_activite h3 {
-  color: black;
-  font-weight: bold;
-}
-
-.titre_section {
-
-}
-
-.activite {
-
-}
-
-.activite img {
- 
-}
-
-.activite1 img {
- 
-}
-
-.activite1img {
-  height: 25px;
-}
-
-.activite2img {
-  height: 20px;
-}
-
-.activite3img {
-  display: flex;
-  height: 10px;
-}
-
-.activite4img {
-  height: 43px;
+  height: 1300px;
 }
 
 .bloc_activite{
-  display: flex;
-  flex-direction: column;
+  width: 82%;
+  height: 50px; 
+  margin-left: 1.5em;
 }
 
-.activite5img {
-  height: 14px;
+.activite {
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
 }
 
-.activite6img {
-  height: 14px;
+.activite img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
-.titre_activite {
-  padding: 0px 5px 20px;
+.activite1 img {
+  background-color: #0065fc;
+  width: 5%;
+  height: 20%;
 }
-
-.activite2 {
-  margin: 0px 0px 61px;
-}
-
-.activite5 {
-  margin: 0px 0px 92px;
-}
-
-
   /* partie pied de page*/
 
   #pied_page{
