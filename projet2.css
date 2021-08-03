@@ -10,7 +10,7 @@ body {
 
 header {
   display: flex;
-}
+ }
 
 #site {
   display: flex;
@@ -63,6 +63,7 @@ h2 {
 .slogan {
   display: block;
   margin-left: 20px;
+  margin-top: -2em;
 }
 
 .slogan h1 {
@@ -323,14 +324,13 @@ h3 {
 
 /*Partie les plus populaires*/
 
-#plus_populaires:nth-child(2) {
-  display: block;
+#plus_populaires {
+  display: flex;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px;
   margin-top: 30px;
   width: 30%;
-
 }
 
 .titre_section_populaire {
@@ -340,7 +340,6 @@ h3 {
   margin-bottom: 1.1em;
   padding-bottom: 0.7em;
   font-size: 1.4em;
-  
 }
 
 .hebergements_populaire {
@@ -631,6 +630,7 @@ footer {
   /*Partie de la page qui commence par le slogan*/
   .slogan {
     margin-left: 1 .5em;
+    margin-top: 0em;
   }
 
   /*partie bouton de recherche*/
@@ -819,6 +819,9 @@ footer {
     margin-top: -0.5em;
   }
   
+  .afficherplus{
+    margin-left: 0.5em;
+  }
 
   /* partie les plus populaires */
 
@@ -890,14 +893,12 @@ footer {
 /* partie activités à marseille*/
 .activitesmarseille{
   width: 100%;
-  margin-top: -2em;
-  
 }
 
 .titre_section_marseille{
   font-size: 1.3em;
   padding-bottom: 2em;
-  margin-left: 0.3em;
+  margin-left: 0.2em;
 }
 
 .conteneur_activite {
@@ -1267,3 +1268,4 @@ footer {
     font-size: large;
   }
 }
+
