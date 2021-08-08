@@ -600,7 +600,10 @@ footer {
 
   .hebergements_menu a{  
     margin-top: -2em;
+    color:  #0065FC;
   }
+
+  
 
   .activite_menu{
     display: flex;
@@ -618,10 +621,22 @@ footer {
     margin-top: -5em;
     margin-left: 13em;
   }
+
+  .inscription_menu a{
+    color:  #0065FC;
+  }
+
+  .activite_menu a{
+ 
+    
+  }
+
+  .hebergements_menu a{
+    border-bottom:  #0065FC 2px;
+  }
   
 
-  .menu ul {
-    border-bottom: 2px solid #f2f2f2;
+   
   }
 
   /*Partie de la page qui commence par le slogan*/
