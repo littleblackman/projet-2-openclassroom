@@ -554,9 +554,8 @@ footer {
   body{
     margin-right: 0em;
     padding-right: 0em;
-   
-    width: 100%;
-  }
+
+    }
 
   h2 {
     /*font-family: 'Raleway-Semibold';*/
@@ -619,8 +618,6 @@ footer {
     margin-top: -5em;
     margin-left: 13em;
   }
-
-  .inscription_menu 
   
 
   .menu ul {
@@ -791,9 +788,8 @@ footer {
   }
 
   .hotel {
-    width: 100%;
+    width: 92%;
     margin-top: 1em;
-  
   }
 
   .hotel img {
@@ -828,8 +824,6 @@ footer {
   #plus_populaires:nth-child(2){
     order: -1;
     width: 100%;
-    margin-right: 0em;
-    padding-right: 0em;
     border-radius: 0px;
   }
 
@@ -845,12 +839,12 @@ footer {
     position: absolute;
     display: flex;
     align-items: baseline;
-    margin-left: -1.5em;
+    margin-left: -2.5em;
   }
 
   .hotel_populaires {
     display: flex;
-    width: 95%;
+    width: 89%;
     height: 140px;
     background: white;
     border-radius: 20px;
@@ -893,6 +887,7 @@ footer {
 /* partie activités à marseille*/
 .activitesmarseille{
   width: 100%;
+  margin-top: -2em;
 }
 
 .titre_section_marseille{
@@ -909,7 +904,7 @@ footer {
 }
 
 .bloc_activite {
-  width: 84%;
+  width: 89%;
   margin-left: 2em;
 }
 
@@ -942,8 +937,6 @@ footer {
   margin: 0px 0px 35px;
 }
 
-
-
 .activite6img {
   height: 100px;
 }
@@ -951,13 +944,11 @@ footer {
   /* partie pied de page*/
 
   #pied_page{
-    width: auto;
+    position: relative;
+    width: 100%;
     display:flex;
     flex-direction: column;
-    padding-right: 0em;
-    margin-right: 0em;
-    width: 100%;
-
+    background-color: blueviolet;
   }
 
   .a_propos:nth-child(1) {
