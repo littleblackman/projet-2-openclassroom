@@ -554,8 +554,9 @@ footer {
   body{
     margin-right: 0em;
     padding-right: 0em;
-
-    }
+   
+    width: 100%;
+  }
 
   h2 {
     /*font-family: 'Raleway-Semibold';*/
@@ -578,11 +579,9 @@ footer {
   #site {
     display: grid;
     margin-left: 10px;
-   
-    
   }
 
-  .logo {
+  .logo:nth-child(1) {
     margin-left: 1em;
   }
 
@@ -599,11 +598,8 @@ footer {
   }
 
   .hebergements_menu a{  
-    margin-top: -2em;
-    color:  #0065FC;
+    margin-top: -1.5em;
   }
-
-  
 
   .activite_menu{
     display: flex;
@@ -612,31 +608,27 @@ footer {
   }
 
   .activite_menu a{  
-    margin-top: -2em;
+    margin-top: -1.5em;
    }  
+
+   .activite_menu a:hover{
+   }
 
   .inscription_menu{
     display: flex;
     position: absolute;
-    margin-top: -5em;
+    margin-top: -4.5em;
     margin-left: 13em;
   }
 
   .inscription_menu a{
-    color:  #0065FC;
-  }
-
-  .activite_menu a{
- 
-    
-  }
-
-  .hebergements_menu a{
-    border-bottom:  #0065FC 2px;
+    color: #0065fc;
   }
   
 
-   
+  .menu ul {
+    border-bottom: 2px solid #f2f2f2;
+    margin-bottom: 2em;
   }
 
   /*Partie de la page qui commence par le slogan*/
@@ -805,6 +797,7 @@ footer {
   .hotel {
     width: 92%;
     margin-top: 1em;
+  
   }
 
   .hotel img {
@@ -839,6 +832,8 @@ footer {
   #plus_populaires:nth-child(2){
     order: -1;
     width: 100%;
+    margin-right: 0em;
+    padding-right: 0em;
     border-radius: 0px;
   }
 
@@ -854,12 +849,12 @@ footer {
     position: absolute;
     display: flex;
     align-items: baseline;
-    margin-left: -2.5em;
+    margin-left: -2em;
   }
 
   .hotel_populaires {
     display: flex;
-    width: 89%;
+    width: 90%;
     height: 140px;
     background: white;
     border-radius: 20px;
@@ -902,13 +897,13 @@ footer {
 /* partie activités à marseille*/
 .activitesmarseille{
   width: 100%;
-  margin-top: -2em;
 }
 
 .titre_section_marseille{
   font-size: 1.3em;
   padding-bottom: 2em;
   margin-left: 0.2em;
+  margin-top: -1em;
 }
 
 .conteneur_activite {
@@ -919,7 +914,7 @@ footer {
 }
 
 .bloc_activite {
-  width: 89%;
+  width: 88%;
   margin-left: 2em;
 }
 
@@ -952,6 +947,8 @@ footer {
   margin: 0px 0px 35px;
 }
 
+
+
 .activite6img {
   height: 100px;
 }
@@ -959,11 +956,13 @@ footer {
   /* partie pied de page*/
 
   #pied_page{
-    position: relative;
-    width: 100%;
+    width: auto;
     display:flex;
     flex-direction: column;
-    background-color: blueviolet;
+    padding-right: 0em;
+    margin-right: 0em;
+    width: 100%;
+
   }
 
   .a_propos:nth-child(1) {
@@ -1275,3 +1274,4 @@ footer {
   }
 }
 
+  
