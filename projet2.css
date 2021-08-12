@@ -59,6 +59,14 @@ h2 {
   color:#0065fc; 
 }
 
+.inscription_menu a:hover{
+  border-top:0px white;
+}
+
+.inscription_menu a{
+  color: #0065fc;
+}
+
 /*Partie de la page qui commence par le slogan */
 .slogan {
   display: block;
@@ -110,6 +118,7 @@ h2 {
 .type-search::placeholder {
   font-weight: bold;
   color: black;
+  
 }
 
 .fa-map-marker-alt {
@@ -174,7 +183,7 @@ h2 {
 }
 
 .bouton h3:hover {
-  background-color: #dcdcdc;
+  background-color: #ADD8E6;
 }
 
 .circle-icon-filter {
@@ -228,7 +237,7 @@ h3 {
   box-sizing: border-box;
   color: #0065fc;
   padding: 7px;
-  margin-top: 0.5em;
+  margin-top: 0.4em;
   text-align: center;
   border: solid 1px #d9d9d9;
   border-radius: 100%;
@@ -599,6 +608,8 @@ footer {
 
   .hebergements_menu a{  
     margin-top: -1.5em;
+    
+    border-top:0px;
   }
 
   .activite_menu{
@@ -611,7 +622,8 @@ footer {
     margin-top: -1.5em;
    }  
 
-   .activite_menu a:hover{
+   .activite_menu :hover{
+     border-bottom: 2px solid blue;
    }
 
   .inscription_menu{
@@ -625,9 +637,7 @@ footer {
     color: #0065fc;
   }
   
-
   .menu ul {
-    border-bottom: 2px solid #f2f2f2;
     margin-bottom: 2em;
   }
 
