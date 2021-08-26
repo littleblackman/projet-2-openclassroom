@@ -54,7 +54,7 @@ h2 {
 }
 
 .menu a:hover {
-  border-top: solid blue 2px;
+  border-top: solid #0065fc 2px;
   padding-top: 12px;
   color:#0065fc; 
 }
@@ -139,7 +139,7 @@ h2 {
   outline: none;
   font-weight: bold;
   border-color: #f2f2f2;
-} 
+}
 
 .logo_loupe{
   display: none;
@@ -344,6 +344,7 @@ h3 {
 
 .titre_section_populaire {
   display: flex;
+  width: 100%;
   align-items: baseline;
   padding-top: 0.1em;
   margin-bottom: 1.1em;
@@ -608,8 +609,13 @@ footer {
 
   .hebergements_menu a{  
     margin-top: -1.5em;
-    
     border-top:0px;
+  }
+
+  .hebergements_menu a:hover{
+    width: 100%;
+    border-bottom: 2px solid blue;
+  
   }
 
   .activite_menu{
@@ -620,11 +626,7 @@ footer {
 
   .activite_menu a{  
     margin-top: -1.5em;
-   }  
-
-   .activite_menu :hover{
-     border-bottom: 2px solid blue;
-   }
+   } 
 
   .inscription_menu{
     display: flex;
@@ -638,8 +640,19 @@ footer {
   }
   
   .menu ul {
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
     margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    border-top: none;
   }
+
+  .menu a:hover{
+    border-top: none;
+    padding-top: 0px;
+  }
+
+  
 
   /*Partie de la page qui commence par le slogan*/
   .slogan {
@@ -685,6 +698,7 @@ footer {
   }
 
   .rechercher {
+    
     background-color: #0065fc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -696,16 +710,23 @@ footer {
     outline: none;
     font-weight: bold;
     border-color: #f2f2f2;
-  } 
   
-  .logo_loupe{
-    display: block;
-    position: absolute;
-    color: white;
-    margin-left: 13.4em;
+  } 
+
+  .logo_loupe {
+    display: flex;
     margin-top: 0.6em;
-    
+    color: black;
   }
+
+  .fa-search{
+    display: flex;
+    position:absolute;
+    color:white;
+    transform: translate(-170%, 10%);
+  
+  }
+
   /* partie filtres */
 
   #section_filtres{
@@ -757,7 +778,7 @@ footer {
   }
 
   .cercle_information h3{
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   
   .titre_slogan {
@@ -774,7 +795,7 @@ footer {
     text-align: center;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-left: 1em;
   }
 
