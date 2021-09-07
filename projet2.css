@@ -613,11 +613,8 @@ footer {
   }
 
   .hebergements_menu a:hover{
-    width: 100%;
     border-bottom: 2px solid blue;
-  
   }
-
   .activite_menu{
     display: flex;
     justify-content: center;
