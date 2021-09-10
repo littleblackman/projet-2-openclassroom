@@ -1,5 +1,4 @@
 body {
-  margin-left: 30px;
   font-family: "Raleway", sans-serif;
   margin: 0em;
   padding: 0em;
@@ -26,6 +25,7 @@ header {
   padding-bottom: 2em;
 }
 
+ 
 h2 {
   font-size: 1.3em;
 }
@@ -162,6 +162,7 @@ h2 {
 .filtres {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .filtres h3 {
@@ -280,7 +281,10 @@ h3 {
   padding: 5px;
   box-sizing: border-box;
   margin: 0 5px 20px 5px;
-  box-shadow: 0 5px 16px #0000002e;
+}
+
+.hotel:hover{
+  box-shadow: 0 5px 16px blue;
 }
 
 .hotel img {
@@ -324,6 +328,7 @@ h3 {
 .grey {
   color: lightgrey;
 }
+
 .afficherplus {
   color: black;
   font-weight: bold;
@@ -378,7 +383,10 @@ h3 {
   box-sizing: border-box;
   margin: 0px 0px 20px 0px;
   height: 145px;
-  box-shadow: 0 5px 16px #0000002e;
+}
+
+.hotel_populaires:hover{
+  box-shadow: 0 5px 16px blue;
 }
 
 .hotel_populaires a {
@@ -404,7 +412,7 @@ h3 {
 
 .fa-chart-line:before {
   display: flex;
-  margin-left: 5em;
+  margin-left: 6.5em;
 }
 
 .etoiles_populaire {
